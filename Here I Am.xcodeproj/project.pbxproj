@@ -17,6 +17,7 @@
 		88ACAE7223E86BAF0012C671 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88ACAE7023E86BAF0012C671 /* Main.storyboard */; };
 		88ACAE7423E86BB00012C671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88ACAE7323E86BB00012C671 /* Assets.xcassets */; };
 		88ACAE7723E86BB00012C671 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88ACAE7523E86BB00012C671 /* LaunchScreen.storyboard */; };
+		88E5191023E9C50200571BFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88E5190F23E9C50200571BFA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		88ACAE7323E86BB00012C671 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88ACAE7623E86BB00012C671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88ACAE7823E86BB00012C671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88E5190F23E9C50200571BFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAA4B85022855F7B97DC35D2 /* Pods-Here I Am.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Here I Am.release.xcconfig"; path = "Target Support Files/Pods-Here I Am/Pods-Here I Am.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 				88ACAE7323E86BB00012C671 /* Assets.xcassets */,
 				88ACAE7523E86BB00012C671 /* LaunchScreen.storyboard */,
 				88ACAE7823E86BB00012C671 /* Info.plist */,
+				88E5190F23E9C50200571BFA /* GoogleService-Info.plist */,
 			);
 			path = "Here I Am";
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88ACAE7723E86BB00012C671 /* LaunchScreen.storyboard in Resources */,
+				88E5191023E9C50200571BFA /* GoogleService-Info.plist in Resources */,
 				88ACAE7423E86BB00012C671 /* Assets.xcassets in Resources */,
 				88ACAE7223E86BAF0012C671 /* Main.storyboard in Resources */,
 			);
