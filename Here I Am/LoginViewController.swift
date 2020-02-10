@@ -58,7 +58,7 @@ class LoginViewController: UIViewController {
         
         //Create cleaned versions of the text field
         let email = emailNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        let password = passwordNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = passwordNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines) 
         
         // Signing in the user
         Auth.auth().signIn(withEmail: email, link: password) { (result, error) in
