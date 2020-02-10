@@ -228,6 +228,24 @@
                                 <rect key="frame" x="0.0" y="511" width="414" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzS-Q3-9SL">
+                                <rect key="frame" x="20" y="647" width="156" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Need an appointment?"/>
+                                <connections>
+                                    <action selector="appointmentButton:" destination="xZP-Vv-emp" eventType="touchUpInside" id="OXn-D4-Agd"/>
+                                    <segue destination="67u-4N-Ran" kind="show" id="dOb-fG-1xw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D91-e9-ai2">
+                                <rect key="frame" x="20" y="725" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="See who's about?"/>
+                                <connections>
+                                    <action selector="whoIsAbout:" destination="xZP-Vv-emp" eventType="touchUpInside" id="D2Q-jU-pwz"/>
+                                    <segue destination="HTg-r7-hO1" kind="show" id="EtY-8X-jJ6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="kKb-Sj-tUG"/>
@@ -236,7 +254,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1S1-gp-HHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2098.5507246376815" y="229.6875"/>
+            <point key="canvasLocation" x="2097" y="246"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="7ME-Je-IOw">
@@ -249,31 +267,33 @@
                         <viewLayoutGuide key="safeArea" id="Thm-4g-0md"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="XMb-lS-kta"/>
+                    <navigationItem key="navigationItem" id="lfS-eA-dUG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zrB-aO-4Ls" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3693" y="554"/>
+            <point key="canvasLocation" x="2849" y="1379"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="0m9-hW-SsD">
             <objects>
                 <viewController id="67u-4N-Ran" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Tfk-T5-P1G">
+                    <view key="view" contentMode="scaleToFill" id="Tfk-T5-P1G" customClass="ItemOneViewController">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="1pU-rk-q21"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="I3W-gj-y7H"/>
+                    <navigationItem key="navigationItem" id="8Od-3J-qRR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTa-fr-njL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3693" y="-94"/>
+            <point key="canvasLocation" x="3557" y="76"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Booking View Controller-->
         <scene sceneID="Yp0-vd-aE5">
             <objects>
-                <tabBarController id="Tdg-G8-d7u" sceneMemberID="viewController">
+                <tabBarController id="Tdg-G8-d7u" customClass="BookingViewController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PPN-YI-E7I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -286,7 +306,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7EO-SI-RTF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2774" y="230"/>
+            <point key="canvasLocation" x="2881" y="546"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dqx-38-d4x">
@@ -306,4 +326,8 @@
             <point key="canvasLocation" x="-325" y="230"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dOb-fG-1xw"/>
+        <segue reference="EtY-8X-jJ6"/>
+    </inferredMetricsTieBreakers>
 </document>
