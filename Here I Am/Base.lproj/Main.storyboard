@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q81-Du-cto">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DTh-Lx-NJV">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
@@ -62,13 +62,13 @@
         <!--Login View Controller-->
         <scene sceneID="vPp-E1-Frf">
             <objects>
-                <viewController id="GLQ-ht-wDB" customClass="LoginViewController" customModule="Here_I_Am" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="currentContext" id="GLQ-ht-wDB" customClass="LoginViewController" customModule="Here_I_Am" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lWv-73-S5G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fDf-mE-Qmd">
-                                <rect key="frame" x="40" y="84" width="334" height="220"/>
+                                <rect key="frame" x="40" y="128" width="334" height="220"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o3Z-RH-9LN" userLabel="Email Text Field ">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
@@ -114,8 +114,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="0A7-QB-lDh"/>
                     <connections>
+                        <outlet property="emailNameTextField" destination="o3Z-RH-9LN" id="cWM-n6-CfM"/>
                         <outlet property="errorLabel" destination="B7k-IH-a6g" id="IFN-dc-dcO"/>
                         <outlet property="loginButton" destination="Vh2-cZ-DjP" id="FyZ-Hx-EPW"/>
+                        <outlet property="passwordNameTextField" destination="YD4-Tp-Vm5" id="Qx2-G9-xD0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jQ5-s1-TJi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -131,7 +133,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="66g-LC-MbQ">
-                                <rect key="frame" x="40" y="84" width="334" height="370.5"/>
+                                <rect key="frame" x="40" y="128" width="334" height="370.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PKJ-DR-EXp">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -304,6 +306,21 @@
             </objects>
             <point key="canvasLocation" x="3646" y="94"/>
         </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="Vmy-1N-xVO">
+            <objects>
+                <viewController id="DTh-Lx-NJV" customClass="SettingsViewController" customModule="Here_I_Am" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qwj-5R-mnY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="u0h-xN-uIe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jUp-Y7-qIh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4832" y="-23"/>
+        </scene>
         <!--Booking View Controller-->
         <scene sceneID="Yp0-vd-aE5">
             <objects>
@@ -325,9 +342,10 @@
         <!--Navigation Controller-->
         <scene sceneID="dqx-38-d4x">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Q81-Du-cto" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q81-Du-cto" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vlz-cJ-5qV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -337,7 +355,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fd1-bR-Nag" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-325" y="230"/>
+            <point key="canvasLocation" x="-310" y="230"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

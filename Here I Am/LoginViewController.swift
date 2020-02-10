@@ -49,16 +49,37 @@ class LoginViewController: UIViewController {
     }
 
  
+    func isValidEmail(_ email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: email)
+    }
     
     
     @IBAction func loginTapped(_ sender: Any) {
+        
+        //guard emailNameTextField.text != nil && passwordNameTextField.text != nil else { return }
+        
+        
+        guard let emailText = emailNameTextField.text, let passwordText = passwordNameTextField.text else {
+            print("Email/password empty")
+            return
+        }
+        
+        guard isValidEmail(emailText) else {
+            print("invalid email")
+            return
+        }
+        
+        
         
         
         // TODO: Validate Text Fields
         
         //Create cleaned versions of the text field
-        let email = emailNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        let password = passwordNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines) 
+        let email = emailText.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = passwordText.trimmingCharacters(in: .whitespacesAndNewlines)
         
         // Signing in the user
         Auth.auth().signIn(withEmail: email, link: password) { (result, error) in
