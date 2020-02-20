@@ -6,5 +6,11 @@
 //  Copyright © 2020 Molly McGrath (s5008390). All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+
+class BookingViewController: UIViewController {
+    
+    
+}
 

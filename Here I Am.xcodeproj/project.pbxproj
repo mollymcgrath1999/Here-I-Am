@@ -20,7 +20,7 @@
 		88ACAE7423E86BB00012C671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88ACAE7323E86BB00012C671 /* Assets.xcassets */; };
 		88ACAE7723E86BB00012C671 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88ACAE7523E86BB00012C671 /* LaunchScreen.storyboard */; };
 		88C16AC523F1A1530069B70C /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C16AC423F1A1530069B70C /* BookingViewController.swift */; };
-		88C16AC723F1A62D0069B70C /* ItemOneViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C16AC623F1A62D0069B70C /* ItemOneViewController .swift */; };
+		88C16AC723F1A62D0069B70C /* MapKitViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C16AC623F1A62D0069B70C /* MapKitViewController .swift */; };
 		88C16AC923F1B2970069B70C /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C16AC823F1B2970069B70C /* AccountManager.swift */; };
 		88C16ACB23F1B3680069B70C /* SettingsVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C16ACA23F1B3680069B70C /* SettingsVIewController.swift */; };
 		88E5191023E9C50200571BFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88E5190F23E9C50200571BFA /* GoogleService-Info.plist */; };
@@ -43,7 +43,7 @@
 		88ACAE7623E86BB00012C671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88ACAE7823E86BB00012C671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88C16AC423F1A1530069B70C /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
-		88C16AC623F1A62D0069B70C /* ItemOneViewController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemOneViewController .swift"; sourceTree = "<group>"; };
+		88C16AC623F1A62D0069B70C /* MapKitViewController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapKitViewController .swift"; sourceTree = "<group>"; };
 		88C16AC823F1B2970069B70C /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		88C16ACA23F1B3680069B70C /* SettingsVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVIewController.swift; sourceTree = "<group>"; };
 		88E5190F23E9C50200571BFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				88A22D4023EDCB310005FA87 /* Helpers */,
-				88C16AC623F1A62D0069B70C /* ItemOneViewController .swift */,
+				88C16AC623F1A62D0069B70C /* MapKitViewController .swift */,
 				88C16AC423F1A1530069B70C /* BookingViewController.swift */,
 				88AA48E223E86C7D00CCDFC7 /* HomeViewController.swift */,
 				88AA48E123E86C7D00CCDFC7 /* SignUpViewController.swift */,
@@ -254,7 +254,7 @@
 				88ACAE6F23E86BAF0012C671 /* ViewController.swift in Sources */,
 				88ACAE6B23E86BAF0012C671 /* AppDelegate.swift in Sources */,
 				88AA48E423E86C7D00CCDFC7 /* SignUpViewController.swift in Sources */,
-				88C16AC723F1A62D0069B70C /* ItemOneViewController .swift in Sources */,
+				88C16AC723F1A62D0069B70C /* MapKitViewController .swift in Sources */,
 				88ACAE6D23E86BAF0012C671 /* SceneDelegate.swift in Sources */,
 				88A22D4223EDCB650005FA87 /* Constants.swift in Sources */,
 			);
