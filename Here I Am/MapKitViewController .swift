@@ -11,7 +11,7 @@ class MapKitViewController: UIViewController  {
     
     @IBOutlet weak var MapKit: MKMapView!
     
-    let locationManager = CLLocationManager()
+  fileprivate  let locationManager = CLLocationManager()
     
     
     
@@ -63,19 +63,16 @@ func checkLocationAuthorization() {
     // Show alert instructing them how to turn on permissions
         
     case.notDetermined: break
-    
+        // Show alert instructing them to turn on permissions
         
+
+    case .restricted: break
+        // Show alert to tell the user what is happening 
         
-        
-        
-        
-        
-    case .restricted:
-        <#code#>
-    case .authorizedAlways:
-        <#code#>
+    case .authorizedAlways: break
+        // Do Map Stuff
     @unknown default:
-        <#code#>
+        break
     }
     
     
